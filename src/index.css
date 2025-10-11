@@ -1,13 +1,104 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.title{
+  font-size: 3rem;
+  border: 7px dashed blue;
+  border-radius: 20px;
+  margin: 6vh;
+  padding: 1vh 5vw;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  max-width: 13000px;
+  margin: 0 auto;
+}
+.card{
+  width: 400px;
+  height: max-content;
+  margin: 1rem; 
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.24)0px 3px 8px;
+}
+.image{
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.tour-info{
+  margin: 10px 5px;
+}
+.tour-price{
+  font-size: 1.3rem;
+  color: #1faa59;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tour-name{
+
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.read-more{
+    color: #12b8c8;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn-red{
+  padding: 10px;
+  background-color: bisque;
+  border: 1px solid green;
+  border-radius: 4px;
+  width: 90%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn-red:hover{
+  background-color: rgb(230, 29, 29);
+  cursor: pointer;
+  transition: all 1s ;
+  transform: scale(1.1);
+  color: white;
+
+}
+.refresh{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+.btn-white{
+  background-color: antiquewhite;
+  /* border: 2px solid blueviolet; */
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  width: 200px;
+  cursor: pointer;
+  font-weight: bold;
+  border: inherit;
+}
+.btn-white:hover{
+  background-color: white;
 }
